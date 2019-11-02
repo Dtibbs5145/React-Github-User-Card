@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
-// import UserCard from './components/UserCard';
-// import User from './components/User';
+import UserCard from './components/UserCard';
+import User from './components/User';
 
 class App extends React.Component {
   constructor() {
@@ -43,8 +43,8 @@ class App extends React.Component {
         return (
           <div>
             <h1>Hello User</h1>
-            {/* <User /> */}
-            {/* <UserCard /> */}
+            <User user={this.state.user}/>
+            <UserCard user={this.state.user} followers={this.state.user.followers}/>
           </div>
         )
       }
