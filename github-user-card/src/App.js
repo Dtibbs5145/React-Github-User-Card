@@ -41,8 +41,8 @@ class App extends React.Component {
 
       render() {
         return (
-          <div>
-            <h1>Hello User</h1>
+          <div className='App-header'>
+            <h1>User Info</h1>
             <User user={this.state.user}/>
             <UserCard user={this.state.user} followers={this.state.user.followers}/>
           </div>

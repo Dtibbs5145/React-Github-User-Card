@@ -2,8 +2,8 @@ import React from 'react';
 
 const User = (props) => {
     return (
-        <div>
-            <h2>User: {props.user.name}</h2>
+        <div className='App'>
+            <h2>User's Name: {props.user.name}</h2>
         </div>
     )
 }
